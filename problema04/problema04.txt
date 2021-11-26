@@ -1,0 +1,51 @@
+//Generar una solución que permita ingresar jugadores de fútbol; por cada jugador se debe solicitar:
+        //Nombre el jugador
+        //Posición en el campo de juego
+        //Edad
+        //Estatura
+
+//El ciclo de ingreso de información deberá terminar cuando el usuario lo decida. Se debe imprimir el siguiente reporte (usar una cadena de acumulación):
+
+    //Listado de Jugadores
+
+    //Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+    //Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+    //Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+    //Ángel Mena -Delantero-, edad 32, estatura 1.75
+    //Michael Estrada -Delantero-, edad 27, estatura 1.93 Promedio de edades: 26.8 Promedio de estaturas: 1.87
+
+
+1. Inicio
+2. nombre, x(100)[{a-z}, {A,E,I,O,U}, {BS}]
+3. posicion, x(10)[{a-z}, {A,E,I,O,U}, {BS}]
+4. edad, i[0, n]
+5. prom_edad, d[o, n] <-- 0 
+6. estatura, d[o, n]
+7. prom_estatura, d[o, n] <-- 0
+8. salida, x(10)[{a-z}]
+9. contador, i[0, n] <-- 0
+10. cadena_final, x(500)[{a-z}, {A,E,I,O,U}, {BS}]
+11. Haga_hasta
+12. 	Escribir "Ingrese el nombre del jugador"
+13. 	Leer nombre	// Alexander Dominguez // Xavier Arreaga // Moisés Caicedo // Ángel Mena // Michael Estrada
+14. 	contador <-- contador + 1 	//0+1 = 1 // 1 + 1 =2 	// 2+1 = 3	// 3 +1 =4 	// 4 + 1 = 5
+15. 	Escribir "Ingrese la posición del jugador"
+16. 	Leer posicion 	// Arquero 	// Defensa 	// Mediocentro	// Delantero 	// Delantero
+17. 	Escribir "Ingrese la edad del jugador"
+18. 	Leer edad	// 32 	// 24 	// 19 	// 32 	// 27 
+19.	prom_edad <-- edad/contador // prom_edad <-- edad/contador // prom_edad <-- edad/contador //prom_edad <-- edad/contador //prom_edad <-- edad)/contador
+20. 	Escribir "Ingrese la estatura del jugador"
+21. 	Leer estatura 	// 1.95 // 1.85 // 1.88 // 1.75 	// 1.93
+22.	prom_estatura <-- estatura/contador // prom_estatura <-- estatura/contador // prom_estatura <-- estatura/contador // prom_estatura <-- estatura/contador // prom_estatura <-- estatura/contador 
+23.	cadena_final <-- nombre + "-"+ posicion+ "-" + "edad" + edad + "estatura" + estatura + "\n"
+24.	Escribir "Escriba si para salir del proceso"
+25.	Leer salida // "no" // "no" // "no" // "no" // "no" // "si" 
+26. Fin Haga_Hasta (salida!="si") //"no" != "si" | v //"no" != "si" | v //"no" != "si" | v //"no" != "si" | v	 //"no" != "si" | v// "si" != "si" |f
+27. Escribir "Listado de jugadores"
+28. Escribir cadena_final
+29. Escribir "Promedio edades: " + prom_edad + "Promedio de estaturas: " + prom_estatura
+30. Fin
+
+
+
+
